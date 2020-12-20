@@ -11,22 +11,22 @@ public:
     while (1) {
     for(index3 = index1; index3 < index2; index3++)
     {
-    if(s[index3]==s[index2])
+    if(s[index3] == s[index2])
     {
         characters = 1;
     break;
     }
     }
-    if(characters==1)
+    if(characters == 1)
     {
-        characters=0;
+        characters = 0;
     break;
     }
-    if(index2>=s.size())
+    if(index2 >= s.size())
     break;
     index2++;
     }
-    int temp = index2-index1;
+    int temp = index2 - index1;
     result = temp > result ? temp : result;
     index1 = index3 + 1;
     }
